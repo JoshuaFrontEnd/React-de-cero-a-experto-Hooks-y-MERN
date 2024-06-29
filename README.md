@@ -32,5 +32,5 @@ Este es un listado de varios de los temas que tocamos en el curso:
 - Heroku y Heroku Logs
 - Git y Github
 - Redux DevTools
-- React DevTools
+
 __Y mucho más__
