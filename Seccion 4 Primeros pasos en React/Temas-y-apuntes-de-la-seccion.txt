@@ -1,0 +1,20 @@
+¿Qué veremos en esta sección?
+
+- Nuestra primera aplicación - Hola Mundo
+- Exposiciones sobre los componentes
+- Creación de componentes (Functional Components)
+- Propiedades - Props
+- Impresiones en el HTML
+- PropTypes
+- DefaultProps
+- Introducción general a los Hooks
+- useState
+
+Router: Un "router" nos ayuda a navegar entre distintas "paginas" sin refrescar el navegador
+
+Screen/Pagina: Son las vistas de una pagina web accedidas mediante un "router" y se componen de multiples "componentes"
+
+Componente: Un "componente" es una pequeña pieza de codigo encapsulada reutilizable que puede tener "estado" o no y puede contener otros "componentes", cada componente puede tener alguna accion en especifico
+
+Estado: Es como se encuentra la informacion de un componente en un punto determinado del tiempo, por ejemplo, un formulario sin completar es un componente con un estado donde los valores de los inputs son nulos o vacios, pero al completar el formulario, el estado del componente cambia a uno donde los valores de los inputs se encuentran con informacion 
+

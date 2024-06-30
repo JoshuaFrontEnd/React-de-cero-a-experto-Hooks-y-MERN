@@ -466,7 +466,7 @@
  - Fetch API
 ----------------------------------------------------------------- */
 
-// const apiKey = 'viEyxNItWKqPrKfPuVWlAcspcvWoG1UY'
+// const apiKey = ''
 
 // const peticion = fetch(`https://api.giphy.com/v1/gifs/random?api_key=${ apiKey }`)
 
@@ -516,7 +516,7 @@
 // - La palabra reservada "Await" permite trabajar el codigo de la promesa como si este fuera "sincrono"
 // - "Async" puede trabajar sin "Await", pero "Await" no puede ser declarado si no se encuentra dentro de una funcion "Async"
 
-// const apiKey = 'viEyxNItWKqPrKfPuVWlAcspcvWoG1UY'
+// const apiKey = ''
 
 // const peticion = fetch(`https://api.giphy.com/v1/gifs/random?api_key=${ apiKey }`)
 
@@ -540,7 +540,7 @@
 
 // const getImagenPromesa = async () => {
 
-//   const apiKey = 'viEyxNItWKqPrKfPuVWlAcspcvWoG1UY'
+//   const apiKey = ''
 
 //   // - Con la palabra reservada "await" declaramos que se tiene que ejecutar una promesa antes de que el codigo se siga ejecutando, esto quiere decir que javascript no ejecutara la linea siguiente de codigo hasta que se complete el resultado de "fetch" (promesa) ya que fue declarado con "await"
 //   const resp = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=${ apiKey }`)
@@ -565,7 +565,7 @@
 
 //   try {
 
-//     const apiKey = 'viEyxNItWKqPrKfPuVWlAcspcvWoG1UY'
+//     const apiKey = ''
 //     const resp = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=${ apiKey }`)
 //     const { data } = await resp.json()
 //     const { url } = data.images.original
