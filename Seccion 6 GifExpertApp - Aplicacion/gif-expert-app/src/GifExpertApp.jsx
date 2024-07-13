@@ -4,7 +4,7 @@ import { GifGrid } from './components/GifGrid'
 
 export const GifExpertApp = () => {
 
-  const [ categories, setCategories ] = useState(['One Punch'])
+  const [ categories, setCategories ] = useState(['Dragón Ball'])
 
   const onAddCategory = ( newCategory ) => {
 
@@ -48,7 +48,10 @@ export const GifExpertApp = () => {
 
       {/* Listado de Gif */}
       { categories.map(( category ) => (
-        <GifGrid key={ category } category={ category } />
+        <GifGrid
+          key={ category }
+          category={ category }
+        />
       ))
       }
 

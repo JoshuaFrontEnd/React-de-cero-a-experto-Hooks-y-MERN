@@ -1,26 +1,27 @@
-import { useEffect, useState } from 'react'
 import { GifItem } from './GifItem'
-import { getGifts } from '../helpers/getGifs'
+import { useFetchGifs } from '../hooks/useFetchGifs'
 
 export const GifGrid = ({ category }) => {
 
-  // - Seteo un estado "arreglo" para las imagenes que voy a cargar
-  const [ images, setImages ] = useState([])
+  const { images, isLoading } = useFetchGifs( category )
 
-  // - Creo una promesa para obtener las imagenes desde la API, agrego esas imagenes a mi estado "arreglo" con la funcion "setImages" de "useState"
-  const getImages = async () => {
-    const newImages = await getGifts( category )
-    setImages( newImages )
-  }
-
-  // - Con el Hook "useEffect" llamo a la funcion "getImages" que con una promesa obtiene las imagenes de la API
-  useEffect(() => {
-    getImages()
-  }, [])
+  console.log({ isLoading })
 
   return (
     <>
       <h3>{ category }</h3>
+
+      {/* Mostrando el "loading" con operador ternario: */}
+      {/* {
+        isLoading
+        ? ( <h2>Cargando...</h2> )
+        : null
+      } */}
+
+      {/* Mostrando el "loading" con operador AND logico: */}
+      {
+        isLoading && ( <h2>Cargando...</h2> )
+      }
 
       <div className="card-grid">
         {/* {
@@ -36,8 +37,15 @@ export const GifGrid = ({ category }) => {
         } */}
         {/* Separando la logica en un componente aparte: */}
         {
-          images.map( ({ id, title }) => (
-            <GifItem key={ id } />
+          images.map( ( image ) => (
+            <GifItem
+              key={ image.id }
+              // - Enviando las propiedades con la notacion de punto, mejor para casos donde necesitamos enviar propiedades de manera especifica sin necesidad de acceder a todas las propiedades
+              // title={ image.title }
+              // url={ image.url }
+              // - Enviando las propiedades con el operador Rest, mejor para casos donde tenemos muchas propiedades y necesitamos trabajar con o casi todas
+              { ...image }
+            />
           ))
         }
       </div>
