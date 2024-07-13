@@ -1,0 +1,21 @@
+¿Qué veremos en esta sección?
+
+- Custom Hooks
+- Fetch hacia un API
+- Comunicación entre componentes
+- Clases de CSS
+- Animaciones
+- Enviar métodos como argumentos
+- Crear listados
+- Keys
+- Giphy
+
+Esta es una aplicación pequeña pero muy ilustrativa que explica cómo utilizar React + customHooks para poder resolver necesidades en específico que podremos re-utilizar después
+
+ - Cuando necesito almacenar informacion y esa informacion va a cambiar el HTML necesito pensar en usar un Hook
+
+ Hook useEffect: https://es.react.dev/reference/react/useEffect
+
+ - useEffect es un Hook de React que te permite sincronizar un componente con un sistema externo.
+
+ - A veces, un componente puede necesitar permanecer conectado a la red, a alguna API del navegador, o a una librería de terceros, mientras se muestra en la página. Estos sistemas no están controlados por React, por lo que se denominan externos.
