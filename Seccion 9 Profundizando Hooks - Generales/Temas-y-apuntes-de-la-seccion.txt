@@ -1,0 +1,37 @@
+¿Qué veremos en esta sección?
+
+- Profundizar en el tema de los Hooks
+- Crear otros customHooks
+- useState
+- useCounter - Personalizado
+- useEffect y sus precauciones
+- useRef
+- useFetch - Personalizado + optimizaciones
+- useLayoutEffect
+- Memo
+- useMemo
+- useCallback
+
+Estos son los Hooks relativamente simples, aún hay mas que explicaremos más adelante, pero en esta sección nos enfocaremos en estos trabajos y para qué nos pueden servir.
+
+Adicionalmente estaremos dejando las bases para lo que será una sección de pruebas sumamente interesante después.
+
+
+useMemo se utiliza para memoizar un valor calculado.
+
+Este hook calcula el valor solo cuando sus dependencias cambian y lo memoriza para evitar recálculos innecesarios en renderizaciones posteriores.
+
+Es útil cuando necesitas realizar cálculos costosos dentro de un componente y quieres evitar hacerlos en cada renderización.
+
+useCallback se utiliza para memoizar una función.
+
+Similar a useMemo, useCallback memoriza la función y la devuelve solo cuando alguna de sus dependencias cambia.
+
+Esto es útil cuando pasas funciones como props a componentes hijos y quieres evitar que se recreen en cada renderización, lo que puede causar re-renderizaciones innecesarias en los componentes hijos.
+
+
+memo se utiliza para memoizar un componente.
+
+Este es un HOC (Higher-Order Component) que envuelve un componente funcional y lo memoriza, lo que significa que solo se volverá a renderizar si sus props cambian.
+
+Esto es útil para optimizar el rendimiento de los componentes funcionales que tienen una renderización costosa.
