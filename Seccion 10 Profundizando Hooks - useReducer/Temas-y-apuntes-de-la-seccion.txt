@@ -1,0 +1,9 @@
+¿Qué veremos en esta sección?
+
+- Reducers
+- useReducer
+- Teoría de un reducer
+- Aplicación de TODOs
+- CRUD local
+
+Esta es una sección dedicada a comprender el concepto de un Reducer, el cual es sumamente importante para poder entrar a Redux o bien usar el contextAPI fácilmente.
