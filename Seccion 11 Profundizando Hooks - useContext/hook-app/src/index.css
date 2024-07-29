@@ -1,0 +1,21 @@
+body {
+  padding: 20px;
+}
+
+button {
+  margin-right: 10px;
+}
+
+a {
+  margin-right: 5px;
+}
+
+.navbar {
+  background-color: #140330;
+  a {
+    color: #8540f5;
+    &:hover, &.active {
+      color: #c29ffa !important;
+    }
+  }
+}
