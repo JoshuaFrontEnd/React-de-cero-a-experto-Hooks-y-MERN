@@ -1,4 +1,4 @@
-# JavaScript Moderno: Guía para dominar el lenguaje
+# React-de-cero-a-experto-Hooks-y-MERN
 
 Repositorio con ejercicios y apuntes del curso [React: De cero a experto - Hooks y MERN](https://www.udemy.com/course/react-cero-experto) impartido por el profesor [Fernando Herrera](https://github.com/Klerith) en Udemy
 
@@ -33,4 +33,17 @@ Este es un listado de varios de los temas que tocamos en el curso:
 - Git y Github
 - Redux DevTools
 
-__Y mucho más__
+## Directorio de Apps
+
+Para revisar el código de las aplicaciones revisa los enlaces en la siguiente tabla:
+
+Proyecto | Código | Web
+| --- | --- | --- |
+| Gif Expert App | [Ver](Seccion%206%20GifExpertApp%20-%20Aplicacion) | [Visitar](https://joshua.cl/u/react/gif-expert-app/)
+| ToDo App | [Ver](Seccion%2010%20Profundizando%20Hooks%20-%20useReducer) | [Visitar](https://joshua.cl/u/react/lista-de-tareas/) 
+| Heroes App | [Ver](https://github.com/JoshuaFrontEnd/Heroes-App) | [Visitar](https://heroes-app-blond-tau.vercel.app/)  
+| Journal App | [Ver](https://github.com/JoshuaFrontEnd/Journal-App) | [Visitar](https://journal-app-blush-seven.vercel.app/) 
+| Calendar App Back End | [Ver](https://github.com/JoshuaFrontEnd/Calendar-App-Back-End) | [Visitar](https://calendar-app-back-end-production.up.railway.app/)
+| Calendar App Front End | [Ver](https://github.com/JoshuaFrontEnd/Calendar-App-Front-End) | [Visitar](https://calendar-app-back-end-production.up.railway.app/)
+
+_El código esta comentado con apuntes y los commits hacen referencia a partes especificas de cada ejercicio donde voy comentando según lo que voy haciendo y aprendiendo. También de esta manera cada commit me sirve como punto de referencia para ir repasando definiciones, técnicas, conceptos, etc._
