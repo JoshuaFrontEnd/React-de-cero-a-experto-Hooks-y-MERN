@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 export const AddCategory = ({ onNewCategory }) => {
 
-  const [ inputValue, setInputValue ] = useState('Dragón Ball')
+  const [ inputValue, setInputValue ] = useState([])
 
   const onInputChange = ({ target }) => {
     setInputValue( target.value )
@@ -27,7 +27,7 @@ export const AddCategory = ({ onNewCategory }) => {
     <form onSubmit={ onSubmit }>
       <input
         type="text"
-        placeholder="Buscar gifs"
+        placeholder="Escribe el gif y luego presiona ENTER"
         value={ inputValue }
         onChange={ onInputChange }
       />

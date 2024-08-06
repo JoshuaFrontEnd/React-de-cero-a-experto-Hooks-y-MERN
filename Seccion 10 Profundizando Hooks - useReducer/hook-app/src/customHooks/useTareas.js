@@ -5,7 +5,7 @@ const initialState = []
 
 // - Con el tercer parametro del hook "useReducer", especificamente con la funcion "init" inicializo el "state" con las tareas guardadas en el localstorage, si no existen las tareas inicializamos con un arreglo vacío para evitar errores
 const init = () => {
-  return JSON.parse( localStorage.getItem( 'tareas' ) || [] )
+  return JSON.parse( localStorage.getItem( 'tareas' )) || []
 }
 
 export const useTareas = () => {
